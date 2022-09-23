@@ -462,11 +462,26 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     display: flex;
     flex-direction: column;
     width: 70%;
+    text-align: center;
 }
 
-.cv {
-    text-align: center;
-    padding: 4px;
+#about-me ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2;
+}
+
+.portfolio-image {
+    transition: 0.4s;
+    width: 100%;
+    background-image: radial-gradient(closest-side, transparent, transparent 80%, white);
+    padding: 0px;
+    margin: 20px;
+    width: auto;
+}
+
+.portfolio-image img{
+    border-radius: 50%;
 }
 
 /*Sidebar*/
