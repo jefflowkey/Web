@@ -1,6 +1,5 @@
 body {
     font-family: 'Noto Serif', serif;
-
     margin: 0px;
     padding: 0px ;
 }
@@ -310,7 +309,7 @@ footer {
     padding: 8px;
     color: white;
     display: flex;
-    margin: 4px;
+    margin: 0px;
 }
 
 footer a {
@@ -653,6 +652,8 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 @media (max-width: 600px) {
     main {
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     h1 {
