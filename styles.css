@@ -515,14 +515,6 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 /*900px and below*/
 
 @media (max-width: 900px) {
-    nav ul {
-        display: none;
-    }
-
-    #menu-icon {
-        display: flex;
-    }
-
     #slideout-menu {
         display: block;
     }
