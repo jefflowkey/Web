@@ -519,10 +519,6 @@ footer #social-media-footer ul li:hover a .fa-youtube {
         display: block;
     }
 
-    #searchbox {
-        display: none;
-    } 
-
     #blogpost {
         width: 100%;
         border-left: 0;
