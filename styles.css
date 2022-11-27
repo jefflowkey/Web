@@ -172,7 +172,7 @@ nav ul {
 #menu-icon {
     height: 100%;
     font-size: 20px;
-    padding: 0 4px;
+    padding: 0;
     color: white;
     display: none;
     align-items: center;
