@@ -186,7 +186,7 @@ nav ul {
 
 #slideout-menu {
     margin: 0;
-    background: rgb(128, 54, 124);
+    background: rgb(0, 0, 0);
     z-index: 100;
     position: fixed;
     transition: 0.4s;
@@ -199,7 +199,7 @@ nav ul {
 
 #slideout-menu ul {
     list-style: none;
-    padding: 0 30px;
+    padding: 0 60px;
 }
 
 #slideout-menu ul li {
@@ -213,13 +213,13 @@ nav ul {
 }
 
 #slideout-menu a:hover {
-    color: black;
+    color: grey;
     transition: 0.4s;
     text-decoration: none;
 }
 
 #slideout-menu input {
-    width: 55%;
+    width: 50%;
     padding: 2px;
     font-family: 'Noto Serif', serif;
     font-size: 18px;
@@ -246,7 +246,8 @@ section {
 
 .section-heading:hover {
     padding: 4px 48px;
-    background-color: rgb(196, 30, 218);
+    background-color: black;
+    color: white;
 }
 
 /*Cards*/
@@ -399,7 +400,8 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 
 .page-heading:hover {
     padding: 4px 40px;
-    background: cyan;
+    background-color: black;
+    color: white;
 }
 
 /*Card Meta*/
@@ -412,7 +414,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 }
 
 .card-meta a {
-    color: brown ;
+    color: red ;
 }
 
 /*Pagination*/
@@ -432,8 +434,8 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 
 .pagination a:hover {
     text-decoration: none;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 /*Blog Post*/
@@ -489,10 +491,12 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 #sidebar {
     background: grey;
     flex: 1;
-    margin-right: 8px;
+    margin-right: 10px;
+    margin-bottom: 8px;
     color: white;
     box-shadow: inset 27px 0 51px -18px rgba (0,0,0,0.75);
     padding: 4px;
+    
 }
 
 /*Comments Section*/
@@ -537,7 +541,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 
 @media (min-width: 720px) {
     main {
-        width: 95%;
+        width: 100%;
         margin: auto;
     }
 
@@ -551,6 +555,16 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 
     .card-image img {
         width: 95%;
+    }
+
+    footer {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer #left-footer ul {
+        margin-left: 35%;
     }
 }
 
