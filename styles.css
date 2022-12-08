@@ -701,6 +701,16 @@ button:hover {
         display: none;
     }
 
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: 10%;
+    }
+
     #card {
         width: 45%;
     }
