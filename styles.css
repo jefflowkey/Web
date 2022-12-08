@@ -75,7 +75,8 @@ p {
     height: 24px;
     width: 70%;
     padding: 4px;
-    margin: 10px;
+    margin: 10px auto;
+    text-align: center;
 }
 
 input,
@@ -85,7 +86,7 @@ textarea {
     font-family: 'Noto Serif', serif;
     font-size: 16px;
     border: none;
-    box-shadow: inset 8px 3px 18px -4px black;
+    box-shadow: inset 6px 2px 10px -2px black;
 }
 
 input:focus,
@@ -529,7 +530,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 }
 
 .contact-box #contact-left {
-    flex: 1;
+    flex: 1.9;
     text-align: center;
     align-items: center;
     padding: 10px;
@@ -537,15 +538,37 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 }
 
 .contact-box #contact-right {
-    flex: 2;
+    flex: 1.1;
     text-align: center;
     background: gray;
     color: black;
 }
 
+.contact-box #contact-left h3{
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    margin: 10px auto;
+    background: black;
+    color: white;
+}
+
+.contact-box #contact-right h3{
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    margin: 10px auto;
+    background: black;
+    color: white;
+}
+
 .input-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 20px;
 }
 
@@ -557,7 +580,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     width: 80%;
     box-shadow: none;
     border-bottom: 1px solid gray;
-    padding-right: 10px;
+    text-align: center;
 }
 
 .input-row textarea {
@@ -575,6 +598,63 @@ label {
     margin-bottom: 6px;
     display: block;
     color: rgb(14, 25, 126);
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.info label {
+    color: black;
+}
+
+.info h4 {
+    color: black;
+    text-decoration: underline ;
+}
+
+.info #info_1 {
+    text-align: center;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info #info_2 {
+    text-align: center;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info #info_3 {
+    text-align: center;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Noto serif', serif;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 30px;
+    border-top: none;
+    background: none;
+    font-weight: bold;
+}
+
+button:hover {
+    padding: 4px 40px;
+    background-color: black;
+    color: white;
 }
 
 /* Media Queries */
@@ -710,10 +790,6 @@ label {
         padding: 6px;
         align-items: center;
     }
-
-    .input-group label {
-        
-    }
     
     .contact-box #contact-right {
         flex: 2;
@@ -724,10 +800,12 @@ label {
         border: 1px solid gray;
         border-bottom: 1px solid gray;
         height: auto;
-        width: 90%;
-        margin: 8px;
+        width: 100%;
+        margin: 0px;
         box-shadow: none;
         box-sizing: border-box;
+        align-items: center;
+        text-align: center;
     }
 
     footer {
@@ -805,6 +883,8 @@ label {
     padding: 15px 30px;
     position: relative;
     transition: 0.5s;
+    width: 86%;
+    margin: auto;
 }
 
 .contact-head h3:hover {
