@@ -83,7 +83,6 @@ textarea {
     height: 30px;
     padding: 0 16px;
     font-family: 'Noto Serif', serif;
-
     font-size: 16px;
     border: none;
     box-shadow: inset 8px 3px 18px -4px black;
@@ -396,6 +395,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     display: inline-block;
     padding: 4px 30px;
     margin-top: 120px;
+    margin-left: 4px;
 }
 
 .page-heading:hover {
@@ -506,7 +506,79 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     padding: 8px;
 }
 
+/* Contact Page */
+
+.contact-head {
+    margin: 4px;
+    text-align: center;
+}
+
+.contact-wrap {
+    width: 80%;
+    margin: 10px auto;
+    background: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.contact-box {
+    background: white;
+    display: flex;
+    color: black;
+}
+
+.contact-box #contact-left {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+.contact-box #contact-right {
+    flex: 2;
+    text-align: center;
+    background: gray;
+    color: black;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group input{
+    height: 30px;
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    border: none;
+    width: 80%;
+    box-shadow: none;
+    border-bottom: 1px solid gray;
+    padding-right: 10px;
+}
+
+.input-row textarea {
+    border: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: auto;
+    width: 100%;
+    margin: 8px;
+    box-shadow: none;
+    box-sizing: border-box;
+    padding-block: 4px;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(14, 25, 126);
+}
+
 /* Media Queries */
+
 /* above 1200px*/
 
 @media (min-width: 1200px) {
@@ -619,6 +691,45 @@ footer #social-media-footer ul li:hover a .fa-youtube {
         width: 100%;
     }
 
+    .contact-box {
+        flex-direction: column;
+    }
+    
+    .contact-box #contact-left {
+        flex: 1;
+        border-right: 0;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        align-items: center;
+    }
+
+    .input-group label {
+        
+    }
+    
+    .contact-box #contact-right {
+        flex: 2;
+        text-align: center;
+    }
+
+    .input-row textarea {
+        border: 1px solid gray;
+        border-bottom: 1px solid gray;
+        height: auto;
+        width: 90%;
+        margin: 8px;
+        box-shadow: none;
+        box-sizing: border-box;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
@@ -678,4 +789,87 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     #logo img {
         padding: 0;
     }
+}
+
+
+/* contact hovers */
+
+
+.contact-head {
+    width: 90%;
+    margin: 10px auto;
+    color: white;
+}
+
+.contact-head h3 {
+    padding: 15px 30px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.contact-head h3:hover {
+    letter-spacing: 3px;
+    background: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 40px var(--clr);
+}
+
+.contact-head h3::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: black;
+}
+
+.contact-head h3 span {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-head h3 i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.contact-head h3 i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--clr);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 80%;
+    top: -6px;
+    background: black;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.contact-head h3:hover i::before {
+    width: 15px;
+    height: 15px;
+    top: -9px;
+    left: 20%;
+}
+
+.contact-head h3 i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--clr);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 20%;
+    bottom: -6px;
+    background: #000000;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.contact-head h3:hover i::after {
+    width: 15px;
+    height: 15px;
+    bottom: -9px;
+    left: 80%;
 }
