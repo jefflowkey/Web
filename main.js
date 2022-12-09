@@ -22,3 +22,22 @@ menuIcon.addEventListener('click', function () {
         slideoutMenu.style.pointerEvents = 'auto';
     }
     })
+
+
+// The search 
+
+const f = document.getElementById('form');
+const q = document.getElementById('query');
+const google = 'https://www.google.com/search?q=site%3A+'; // ??
+const site = 'https://jeffersonk.netlify.app/';
+
+// The function runs every time presses the search button
+function submitted(event) {
+    event.preventDefault();
+    const url = google + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+}
+
+// Listener -> triggered by clicking the submit button then runs the function above
+f.addEventListener('submit', submitted);
