@@ -97,7 +97,10 @@ p {
     width: 70%;
     padding: 4px;
     margin: 10px auto;
-    text-align: center;
+    text-align: left;
+    padding-inline-start: 15px;
+    padding-block: 18px;
+    border-radius: 10px;
 }
 
 input,
@@ -107,7 +110,7 @@ textarea {
     font-family: 'Noto Serif', serif;
     font-size: 16px;
     border: none;
-    box-shadow: inset 6px 2px 10px -2px black;
+    box-shadow: inset 4px 2px 10px -4px rgb(177, 0, 247);
 }
 
 input:focus,
@@ -245,8 +248,11 @@ nav ul {
     padding: 2px;
     font-family: 'Noto Serif', serif;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
+    padding-inline-start: 15px;
+    padding-block:18px;
     margin-left: 50px;
+    border-radius: 10px;
 }
 
 #slideout-menu i {
@@ -276,6 +282,11 @@ nav ul {
     color: cyan;
     font-size: 1.1em;
     background: transparent;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.7;
 }
 
 /* Section */
