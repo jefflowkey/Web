@@ -69,6 +69,27 @@ p {
     pointer-events: none;
     z-index: 50;
     transition: 0.4s;
+    color: white;
+}
+
+#searchbox i {
+    margin-left: 10px;
+}
+
+#searchbox button {
+    background: transparent;
+    font-size: 1.1em;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+#searchbox button:hover {
+    background: transparent;
+    font-size: 1.1em;
+    padding: 15px;
+    border: none;
+    color: cyan;
 }
 
 #searchbox input {
@@ -186,6 +207,7 @@ nav ul {
 
 #slideout-menu {
     margin: 0;
+    align-items: center;
     background: rgb(0, 0, 0);
     z-index: 100;
     position: fixed;
@@ -224,6 +246,36 @@ nav ul {
     font-family: 'Noto Serif', serif;
     font-size: 18px;
     text-align: center;
+    margin-left: 50px;
+}
+
+#slideout-menu i {
+    color: white;
+    margin-left: 10px;
+}
+
+#slideout-menu ul li button {
+    padding: 0px;
+    border: none;
+    color: red;
+    font-size: 1.1em;
+    background: transparent;
+}
+
+#slideout-menu ul li button i {
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    background: transparent;
+}
+
+#slideout-menu button i:hover {
+    padding: 10px;
+    border: none;
+    color: cyan;
+    font-size: 1.1em;
+    background: transparent;
 }
 
 /* Section */
