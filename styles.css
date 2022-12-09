@@ -79,17 +79,37 @@ p {
 #searchbox button {
     background: transparent;
     font-size: 1.1em;
-    padding: 10px;
+    padding: 0px;
     border: none;
-    color: white;
+    color: black;
 }
 
 #searchbox button:hover {
     background: transparent;
     font-size: 1.1em;
-    padding: 15px;
+    padding: 1px;
     border: none;
-    color: cyan;
+    color: rgb(177, 0, 247);
+}
+
+.homepage #searchbox button {
+    color: white;
+}
+
+.homepage #searchbox button:hover {
+    color: black;
+}
+
+.homepage #searchbox input, textarea {
+    background: white;
+    height: 30px;
+    padding: 0 16px;
+    color: black;
+}
+
+.homepage #searchbox input::placeholder {
+    color: black;
+    opacity: 0.7;
 }
 
 #searchbox input {
@@ -105,6 +125,8 @@ p {
 
 input,
 textarea {
+    background: black;
+    color: white;
     height: 30px;
     padding: 0 16px;
     font-family: 'Noto Serif', serif;
@@ -128,7 +150,7 @@ textarea:focus {
 }
 
 #search-icon:hover {
-    color:grey;
+    color:rgb(177, 0, 247);
 }
 
 /* Navigation */
@@ -145,6 +167,7 @@ nav {
     box-sizing: border-box;
     z-index: 100;
     background: black;
+    overflow-y: hidden;
 }
 
 nav a {
@@ -253,6 +276,13 @@ nav ul {
     padding-block:18px;
     margin-left: 50px;
     border-radius: 10px;
+    background: white;
+    color: black;
+}
+
+#slideout-menu input::placeholder {
+    color: black;
+    opacity: 0.7;
 }
 
 #slideout-menu i {
@@ -279,13 +309,13 @@ nav ul {
 #slideout-menu button i:hover {
     padding: 10px;
     border: none;
-    color: cyan;
+    color: rgb(177, 0, 247);
     font-size: 1.1em;
     background: transparent;
 }
 
 ::placeholder {
-    color: black;
+    color: white;
     opacity: 0.7;
 }
 
