@@ -561,10 +561,20 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     text-align: center;
 }
 
+#about-me h3 {
+    text-decoration: underline 1px solid black;
+}
+
 #about-me ul {
     padding: 0;
-    list-style: none;
     line-height: 2;
+    text-align: center ; 
+    display: table;
+    margin: 0 auto;
+}
+
+#about-me ul li {
+    text-align: left;
 }
 
 .portfolio-image {
@@ -583,7 +593,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
 /*Sidebar*/
 
 #sidebar {
-    background: grey;
+    background: black;
     flex: 1;
     margin-right: 10px;
     margin-bottom: 8px;
@@ -591,6 +601,207 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     box-shadow: inset 27px 0 51px -18px rgba (0,0,0,0.75);
     padding: 4px;
     
+}
+
+#sidebar h3 {
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    color: black;
+}
+
+.categories h4{
+    text-align: center;
+    padding: 2px;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+.categories h4:hover{
+    padding: 4px 20px;
+    background: white;
+    color: white;
+}
+
+.categories ul {
+    list-style: none;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.categories ul li {
+    padding: 4px;
+}
+
+/* category nav */
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    min-height: 100vh;
+    background-size: cover;
+    z-index: 100;
+    transition: all 0.5s ease;
+    color: black;
+}
+
+.categories.close{
+    width: 78px;
+}
+
+.categories .nav-links{
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    overflow: auto;
+}
+
+.categories.close .nav-links{
+    overflow: visible;
+}
+
+.categories .nav-links::-webkit-scrollbar{
+    display: none;
+}
+
+.categories .nav-links li{
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+.categories .nav-links li:hover{
+    background: black;
+}
+
+.categories .nav-links li .icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories.close .nav-links li .icon-link{
+    display: block
+}
+
+.categories .nav-links li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.categories .nav-links li.showMenu i.arrow{
+    transform: rotate(-180deg);
+}
+
+.categories.close .nav-links i.arrow{
+    display: none;
+}
+
+.categories .nav-links li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.categories .nav-links li a .link_name{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.categories.close .nav-links li a .link_name{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.categories .nav-links li .sub-menu{
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: black;
+    display: none;
+}
+
+.categories .nav-links li.showMenu .sub-menu{
+    display: block;
+}
+
+.categories .nav-links li .sub-menu a{
+    color: white;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+} 
+
+.categories .nav-links li .sub-menu a:hover{
+    opacity: 1;
+}
+
+.categories.close .nav-links li .sub-menu{
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.categories.close .nav-links li:hover .sub-menu{
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+.categories .nav-links li .sub-menu .link_name{
+    display: none;
+}
+
+.categories.close .nav-links li .sub-menu .link_name{
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+}
+
+.categories .nav-links li .sub-menu.blank{
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.categories .nav-links li:hover .sub-menu.blank{
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /*Comments Section*/
