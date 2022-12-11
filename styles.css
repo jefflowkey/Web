@@ -885,6 +885,18 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     box-shadow: none;
     border-bottom: 1px solid gray;
     text-align: center;
+    background: white;
+    color: black;
+}
+
+.input-group input::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.input-row textarea::placeholder {
+    color: black;
+    opacity: 0.7;
 }
 
 .input-row textarea {
@@ -896,6 +908,8 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     box-shadow: none;
     box-sizing: border-box;
     padding-block: 4px;
+    background: white;
+    color: black;
 }
 
 label {
