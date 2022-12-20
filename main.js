@@ -1,3 +1,13 @@
+// Pre-loader 
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function() {
+    loader.style.display = "none";
+})
+
+// Menu icon
+
 const menuIcon = document.getElementById("menu-icon");
 const slideoutMenu = document.getElementById("slideout-menu");
 const searchIcon = document.getElementById("search-icon");
