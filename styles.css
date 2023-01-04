@@ -1295,6 +1295,10 @@ button:hover {
         text-align: center;
     }
 
+    .card-description {
+        width: 90%;
+    }
+
     #logo img {
         padding: 0;
     }
