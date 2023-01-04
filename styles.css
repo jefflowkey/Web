@@ -479,6 +479,7 @@ section {
     font-weight: bold;
     cursor: pointer;
     background: white;
+    margin: 10px auto;
 }
 
 .btn-readmore:hover {
