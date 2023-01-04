@@ -33,6 +33,11 @@ menuIcon.addEventListener('click', function () {
     }
     })
 
+// Time (dynamic)
+
+var year = new Date();
+document.getElementById("yearFooter").innerHTML = year.getFullYear();
+
 
 // The search 
 

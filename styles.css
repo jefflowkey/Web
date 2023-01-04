@@ -515,6 +515,7 @@ footer #left-footer ul {
     padding: 0;
     list-style: none;
     line-height: 2;
+    font-size: 18px;
 }
 
 footer #right-footer {
@@ -570,6 +571,11 @@ footer #social-media-footer ul li:hover a .fa-github {
 
 footer #social-media-footer ul li:hover a .fa-youtube {
     color: red;
+}
+
+.copyright p .fa {
+    color: aqua;
+    cursor: text;
 }
 
 /*Blog page*/
@@ -1311,6 +1317,18 @@ button:hover {
         font-size: 25px;
         padding: 10px;
         padding-bottom: 0;
+    }
+
+    footer #left-footer ul {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    .copyright p .fa {
+        color: purple;
     }
 }
 
