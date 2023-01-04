@@ -2,6 +2,7 @@ body {
     font-family: 'Noto Serif', serif;
     margin: 0px;
     padding: 0px ;
+    min-height: 100vh;
 }
 
 /* Preloader */
@@ -950,6 +951,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     margin: 10px auto;
     background: black;
     color: white;
+    border-radius: 50px;
 }
 
 .contact-box #contact-right h3{
@@ -961,6 +963,7 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     margin: 10px auto;
     background: black;
     color: white;
+    border-radius: 50px;
 }
 
 .input-row {
