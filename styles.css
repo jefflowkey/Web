@@ -415,7 +415,7 @@ section {
     transition: all 0.4s;
     display: inline-block;
     padding: 4px 20px;
-    margin-left: 4px;
+    margin-left: 70px;
 }
 
 .section-heading:hover {
@@ -589,13 +589,17 @@ footer #social-media-footer ul li:hover a .fa-youtube {
     display: inline-block;
     padding: 4px 30px;
     margin-top: 120px;
-    margin-left: 4px;
+    margin-left: 70px;
 }
 
 .page-heading:hover {
     padding: 4px 40px;
     background-color: black;
     color: white;
+}
+
+.contact-page-heading {
+    margin-left: 60px;
 }
 
 /*Card Meta*/
@@ -1305,6 +1309,18 @@ button:hover {
         text-align: center;
     }
 
+    .section-heading {
+        margin-left: 30px;
+    }
+
+    .page-heading {
+        margin-left: 30px;
+    }
+
+    .contact-page-heading {
+        margin-left: 0px;
+    }
+
     .card-description {
         width: 90%;
     }
@@ -1337,8 +1353,8 @@ button:hover {
 
 
 .contact-head {
-    width: 90%;
-    margin: 10px auto;
+    width: 81%;
+    margin: auto;
     color: white;
 }
 
@@ -1346,7 +1362,6 @@ button:hover {
     padding: 15px 30px;
     position: relative;
     transition: 0.5s;
-    width: 86%;
     margin: auto;
 }
 
